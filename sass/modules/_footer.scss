@@ -1,0 +1,155 @@
+.o-footer {
+	padding:20px 0;
+
+	@include md {
+		padding:50px 0;
+	}
+
+	h2 {
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+
+	.copyright {
+		p {
+			color:rgba(142,153,186,0.37);
+			font-size: 16px;
+		}
+	}
+
+	&-content {
+		padding:20px 0;
+
+		@include xl {
+			padding:50px 0 25px;
+		}
+	}
+}
+
+.c-emailtext {
+	text-align: center;
+
+	@include md {
+		text-align: left;
+	}
+
+	a {
+		color:$white-two;
+		font-size: 14px;
+
+		@include xl {
+			font-size: 22px;
+		}
+
+		&.emailtext {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin:10px 0;
+
+			@include md {
+				justify-content: flex-start;
+				margin:0px;
+			}
+			span {
+				width: 50px;
+				height: 50px;
+				text-align: center;
+				border-radius: 100px;
+				border:2px solid $blue-two;
+				display: flex;
+				flex-direction: row;
+				margin:5px;
+				justify-content: center;
+				align-items: center;
+			}
+
+			&:hover {
+				color:$blue-one;
+
+				span {
+					border:2px solid $blue-one;
+
+					i {
+						color:$blue-one;
+					}
+				}
+			}
+		}
+	}
+}
+
+.c-social {
+	text-align: center;
+	ul {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		li {
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			border-radius: 100px;
+			border:2px solid $blue-two;
+			display: flex;
+			flex-direction: row;
+			margin:5px;
+			justify-content: center;
+			    align-items: center;
+
+			a {
+				font-size: 18px;
+				display: flex;
+				width: 100%;
+				height: 100%;
+				justify-content: center;
+				align-items: center;
+				color:$white-two;
+				&:hover {
+					i {
+						color:$blue-one;
+					}
+				}
+			}
+
+			&:hover {
+				border:2px solid $blue-one;
+				a {
+					i {
+						color:$blue-one;
+					}
+				}
+			}
+		}
+	}
+}
+
+.c-links {
+	text-align: center;
+	margin:10px 0;
+
+	@include md {
+		text-align: right;
+		margin:0px;
+	}
+
+	@include xl {
+		text-align: right;
+	}
+	ul {
+		li {
+			a {
+				color:$white-two;
+				font-size: 14px;
+
+				@include xl {
+					font-size: 22px;
+				}
+
+				&:hover {
+					color:$blue-one;
+				}
+			}
+		}
+	}
+}

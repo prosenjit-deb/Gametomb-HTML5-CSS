@@ -1,0 +1,390 @@
+.o-header {
+	padding:20px 0;
+	width: 100%;
+
+	@include md {
+		padding:50px 0;
+	}
+
+	.logo {
+		text-align: center;
+
+		@include md {
+			text-align: left;
+		}
+	}
+}
+
+.loginbtnbox {
+	text-align: center;
+	margin:20px 0;
+
+	@include md {
+		text-align: right;
+		margin:0px;
+	}
+}
+
+
+.o-navigation {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	margin-left: -15px;
+	position: relative;
+	justify-content: center;
+	@include lg {
+		justify-content: flex-start;
+	}
+	ul {
+		display: none;
+		align-items: center;
+		height: 100%;
+
+		@include lg {
+			display: flex;
+		}
+
+		li {
+			display: inline-flex;
+			text-align: center;
+			height: 100%;
+			align-items: center;
+			position: relative;
+
+			&:after {
+				width: 100%;
+				height: 4px;
+				background-color: #a300d9;
+				position: absolute;
+				content: '';
+				top:100%;
+				left: 0;
+				right: 0;
+				display: none;
+
+			}
+
+			a {
+				font-size: 18px;
+				color:$white-two;
+				padding-right: 25px;
+				padding-left: 25px;
+				display: flex;
+			    height: 100%;
+			    align-items: center;
+			}
+
+			&.active {
+				background: rgb(134,10,175);
+				background: linear-gradient(0deg, rgba(134,10,175,0.5) 0%, rgba(0,0,0,0) 100%);
+				a {
+					color: $white;
+				}
+
+				&:after {
+					display: block;
+				}
+			}
+
+			&:hover {
+				background: rgb(134,10,175);
+				background: linear-gradient(0deg, rgba(134,10,175,0.5) 0%, rgba(0,0,0,0) 100%);
+				a {
+					color: $white;
+				}
+
+				&:after {
+					display: block;
+				}
+			}
+		}
+	}
+
+	.mobilemenu {
+		display: block;
+		color:#fff;
+		font-size: 30px;
+		@include lg {
+			display: none;
+		}
+
+		&.active {
+			color:$violet;
+
+			i {
+				color:$violet;
+			}
+		}
+	}
+
+	.mwrap {
+		position: fixed;
+		top: 0px;
+		right: -345px;
+        width: 320px;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.9);
+        padding: 40px 20px;
+        transition: all 0.5s ease;
+        z-index: 1000;
+		ul {
+			display: block !important;
+			height: auto;
+
+			li {
+				display: block;
+
+				a {
+					line-height: 40px;
+					margin-bottom: 5px;
+					padding:10px;
+				}
+			}
+		}
+
+		&.show {
+			right: 0px;
+        	transition: all 0.5s ease;
+		}
+
+		.closenav {
+	      position: absolute;
+	      right: 12px;
+	      top: 10px;
+	      width: 32px;
+	      height: 32px;
+	      opacity: 0.8;
+	      font-size: 0px;
+	      transition: all 0.5s ease;
+
+	      &:hover {
+	      	opacity: 1;
+	      }
+
+	      &:after {
+	      	position: absolute;
+		    left: 15px;
+		    content: ' ';
+		    height: 33px;
+		    width: 2px;
+		    background-color: #fff;
+		    transform: rotate(-45deg);
+	      }
+	      &:before {
+	      	position: absolute;
+		    left: 15px;
+		    content: ' ';
+		    height: 33px;
+		    width: 2px;
+		    background-color: #fff;
+		    transform: rotate(45deg);
+	      }
+	    }
+	}
+}
+
+.userbox {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+    padding:20px 0px;
+    position: relative;
+
+    @include md {
+		justify-content: flex-end;
+		padding:0px;
+	}
+
+    .userinfo {
+    	width: 45px;
+    	height: 45px;
+    	border-radius: 50%;
+    	overflow: hidden;
+    	margin:10px;
+
+    	@include md {
+			margin:0px 5px;
+		}
+    }
+
+    .notification {
+    	width: 45px;
+    	height: 45px;
+    	border-radius: 50%;
+    	text-align: center;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	background-color: rgba(255,255,255,0.09019607843137255);
+    	padding:10px;
+    	
+    	@include md {
+			padding:0px;
+			margin:0px 5px;
+		}
+    }
+
+    .username {
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	width: 50%;
+    	
+    	@include md {
+			padding:0px;
+			width: auto;
+			margin:0px 5px;
+		}
+
+    	a {
+			color: #efd7fd;
+			font-weight: 400;
+			font-family: "Montserrat";
+			font-size: 12px;
+			@include md {
+				font-size: 18px;
+			}
+
+			&:hover {
+				color:$white;
+			}
+    	}
+    }
+
+    .logoutbox {
+    	width: 150px;
+    	position: absolute;
+    	top:55px;
+    	right: 0;
+    	background-color: rgba(255,255,255,0.09019607843137255);
+    	padding:10px;
+    	display: none;
+
+    	a {
+    		color:$white;
+    		display: block;
+
+    		&:hover {
+    			color:#a300d9;
+    		}
+
+    	}
+
+    	&.show {
+    		display: block;
+    	}
+    }
+}
+
+.c-breadcrumb {
+	ul {
+		&.breadcrumb {
+			background-color: rgba(255,255,255,0);
+			margin-bottom: 0px;
+
+			li {
+				display: inline-flex;
+				padding-right: 0px;
+				font-size:14px;
+				color:$white;
+				position: relative;
+
+				a {
+					color:$white;
+
+					&:hover {
+						color: $violet;
+					}
+				}
+
+				&.active {
+					color: $violet !important;
+				}
+
+				&.breadcrumb-item {
+					&:before {
+						content:'>' !important;
+						color:$white !important;
+						font-size: 20px;
+					}
+				}
+
+				&:first-child {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}	
+	}
+}
+
+.c-subnav {
+	font-size: 14px;
+	width: auto !important;
+	box-sizing: border-box;
+	color: #cd93ec;
+	display: inline-block;
+	float: left;
+
+	@include md {
+		float: right;
+	}
+	ul {
+		display: flex;
+    	justify-content: center;
+    	flex-direction: column;
+
+    	@include md {
+			flex-direction: row;
+		}
+		li {
+			margin:5px 0;
+			a {
+				font-size: 14px;
+				padding:8px 15px;
+				color: #fff;
+				display: block;
+				margin:0 5px;
+				background-color: rgba(174,30,255,0.3);
+				border: 1px solid rgba(121,50,168,0.79);
+				border-radius: 8px;
+
+				&:hover {
+					color: #140025;
+					background-color: $white;
+				}
+			}
+
+			&.active {
+				a {
+					color: #140025;
+					background-color: $white;
+				}
+
+				position: relative;
+				&:after {
+					content: '';
+					position: absolute;
+					top: 98%;
+					left: 0;
+					right:0;
+					width: 0; 
+					height: 0; 
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-top: 10px solid $white;
+					margin:0 auto;
+					display: none;
+
+					@include md {
+						flex-direction: row;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}

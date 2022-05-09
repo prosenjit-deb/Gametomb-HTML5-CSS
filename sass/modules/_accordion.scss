@@ -1,0 +1,124 @@
+.c-accodion {
+    padding: 20px;
+    border-radius: 10px;
+	background-color: rgba(64,19,86,0.2);
+  
+    .inner {
+        padding: 20px 30px;
+        overflow: hidden;
+        display: none;
+      
+        &.show {
+          /*display: block;*/
+        }
+
+        p {
+        	margin-bottom: 0px;
+        }
+    }
+
+      
+    .acctoggle {
+        width: 100%;
+        display: block;
+		border-radius: 10px;
+		background-color: rgba(174,30,255,0.0392156862745098);
+		border: 1px solid rgba(121,50,168,0.79);
+        transition: background .2s ease;
+        padding:10px 30px 10px 20px;
+
+        @include md {
+             padding:20px 30px;
+        }
+      
+        &:hover {
+            background: $white-one;
+
+            a {
+            	color: #140027;
+            }
+        }
+
+        &.minus {
+        	background: $white-one;
+        	position: relative;
+
+        	&:after {
+        		position: absolute;
+        		content: '-';
+        		font-size: 60px;
+        		color:$white;
+        		width: 30px;
+        		height: 30px;
+        		line-height: 19px;
+        		display: block;
+        		background-color: $black;
+        		right: 20px;
+        		top:16px;
+        		text-align: center;
+        		border-radius: 100%;
+        		font-weight: 100;
+        		text-indent: 1px;
+        	}
+        	a {
+            	color: #140027;
+            }
+        }
+        &.plus {
+        	position: relative;
+
+        	&:after {
+        		position: absolute;
+        		content: '+';
+        		font-size: 36px;
+        		color:$black;
+        		width: 30px;
+        		height: 30px;
+        		line-height: 30px;
+        		display: block;
+        		background-color: $white-one;
+        		right: 8px;
+        		top:7px;
+        		text-align: center;
+        		border-radius: 100%;
+        		font-weight: 300;
+        		text-indent: 1px;
+
+                @include md {
+                    right: 20px;
+                    top:16px;
+                }
+        	}
+
+        	&:hover {
+        		&:after {
+        			color:$white-one;
+        			background-color: $black;
+        		}
+        	}
+        }
+    }
+
+    h2 {
+		font-size: 17px;
+		line-height: 25px;
+		color: $white-one;
+		cursor: pointer;
+		font-weight: 500;
+
+        @include md {
+            font-size: 28px;
+            line-height: 30px;
+        }
+
+		a {
+			color: $white-one;
+			margin:0px;
+
+			&:hover {
+				color: #140027;
+			}
+		}
+    }
+    
+}

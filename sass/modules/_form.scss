@@ -1,0 +1,209 @@
+.c-formbox {
+
+	h1 {
+		font-weight: 700;
+		margin-bottom: 45px;
+		text-transform: capitalize;
+		font-size: 36px;
+    	line-height: 49px;
+
+		@include md {
+      		font-size: 48px;
+    		line-height: 50px;
+  		}
+	}
+
+	h2 {
+		margin-bottom:30px;
+		font-size: 26px;
+		text-transform: capitalize; 	
+	}
+	&-text {
+		.textbox {
+			width: 100%;
+			padding:15px 20px;
+			border-radius: 10px;
+			background-color: rgba(174,30,255,0.0784313725490196);
+			border: 1px solid rgba(121,50,168,0.79);
+			margin-bottom: 10px;
+			box-sizing: border-box;
+			color: #cd93ec;
+
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				color: #cd93ec;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+				color: #cd93ec;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+				color: #cd93ec;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+				color: #cd93ec;
+			}
+		}
+
+		.custom-select {
+			height: auto;
+			background:none;
+
+			select {
+				background: rgba(0,0,0,0);
+				border: 0px;
+				width: 100%;
+				color: #cd93ec;
+			}
+		}
+
+		label {
+			font-size: 20px;
+			color:$white-one;
+			margin-bottom: 20px;
+		}
+
+		.textarea {
+			width: 100%;
+			padding:15px 20px;
+			border-radius: 10px;
+			background-color: rgba(174,30,255,0.0784313725490196);
+			border: 1px solid rgba(121,50,168,0.79);
+			margin-bottom: 10px;
+			box-sizing: border-box;
+			color: #cd93ec;
+			min-height: 125px;
+
+			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+				color: #cd93ec;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+				color: #cd93ec;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+				color: #cd93ec;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+				color: #cd93ec;
+			}
+		}
+	}
+
+	.btnbox {
+		margin-top: 25px;
+
+		i {
+			font-size: 30px;
+			vertical-align: middle;
+			padding: 0 0px 0 5px;
+		}
+
+		.btn {
+			margin:5px;
+		}
+	}
+}
+
+
+.file-input .error {
+	position: absolute;
+	color: red;
+	font-size: 14px;
+	top: -20px;
+	line-height: 14px;
+	right: 2px;
+}
+
+.file-input {
+	position: relative;
+	width: 100%;
+	padding:10px 10px 10px 10px;
+	border-radius: 10px;
+	background-color: rgba(174,30,255,0.0784313725490196);
+	border: 1px solid rgba(121,50,168,0.79);
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	color: #cd93ec;
+}
+
+.uploadbox {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uploadbox .button {
+	display: inline-block;
+	cursor: pointer;
+	background: #5ec5d2;
+	padding: 8px 16px;
+	border-radius: 2px;
+	margin-right: 8px;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.uploadbox .button:hover {
+	background: #5ec5d2;
+}
+
+.field >[type='file'] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.field .pip {
+	display: block;
+	margin: 0px 10px 0 0;
+	width: 100%;
+	position: relative;
+}
+.field .pip .remove {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 15px;
+	height: 15px;
+	font-size: 0px;
+	display: block;
+	line-height: 15px;
+	background-color: rgba(121,50,168,1);
+	text-align: center;
+	z-index: 11;
+	border-radius: 50%;
+	cursor: pointer;
+
+}
+.field .pip .remove:after {
+	content: 'x';
+	font-size: 11px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	line-height: 12px;
+	color:#fff;
+	text-indent: 1px;
+}
+.field .pip .remove:hover {
+	background-color: rgba(121,50,168,0.79);
+	color: #fff;
+}
+
+.field .pip .imageThumb {
+	width: 45px;
+    height: 45px;
+    object-fit: cover;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 3px;
+}
+

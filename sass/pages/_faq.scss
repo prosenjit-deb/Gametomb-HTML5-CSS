@@ -1,0 +1,97 @@
+.c-faq-content {
+	padding:0 20px;
+	h1 {
+		font-size: 30px;
+		line-height: 40px;
+		font-weight: 700;
+
+		@include md {
+			font-size: 48px;
+			line-height: 60px;
+		}
+	}
+
+	&-text {
+		p {
+			font-size: 18px;
+			line-height:30px;
+
+			@include md {
+			    font-size: 24px;
+				line-height: 36px;
+			}
+		}
+	}
+}
+
+.c-partner {
+	padding-top:60px;
+	padding-bottom:60px;
+	h2 {
+		font-size: 30px;
+		line-height: 40px;
+		font-weight: 700;
+		text-transform: capitalize;
+		margin-bottom: 25px;
+
+		@include md {
+			font-size: 48px;
+			line-height: 60px;
+		}
+	}
+
+	&-text {
+		p {
+			font-size: 18px;
+			line-height:30px;
+
+			@include md {
+			    font-size: 24px;
+				line-height: 36px;
+			}
+		}
+	}
+
+	&-logo {
+		padding:40px;
+		border-radius: 20px;
+		background-color: rgba(42,8,63,0.4392156862745098);
+		width: 100%;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: center;
+		
+
+    	@include xl {
+			display: flex;
+    		flex-direction: row;
+    		justify-content: space-around;
+    		align-items: center;
+		}
+
+		img {
+			margin:10px;
+		}
+	}
+}
+
+.c-latest-camp {
+	padding-top:60px;
+	padding-bottom:60px;
+	h2 {
+		font-size: 30px;
+		line-height: 40px;
+		font-weight: 700;
+		text-transform: capitalize;
+		margin-bottom: 40px;
+
+		@include md {
+			font-size: 48px;
+			line-height: 60px;
+		}
+	}
+
+	.btnbox {
+		margin-top: 60px;
+	}
+}

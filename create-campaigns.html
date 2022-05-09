@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Game Tomb :: Create Campaigns</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- gogole fonts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<!-- 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="dist/css/style.css">
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="o-pagewrapp o-pagewrapp-blurbg">
+        <header class="o-header">
+          <div class="container-fluid">
+            <div class="row justify-content-between">
+              <div class="col-md-5 col-lg-3 col-xl-3 order-0 order-lg-0">
+                <div class="logo">
+                  <a href="javascript:void(0)"><img src="images/logo.png" alt="logo"></a>
+                </div>
+              </div>
+              <div class="col-2 col-md-2 col-lg-6 col-xl-6 order-2 order-lg-1">
+                <nav class="o-navigation">
+                  <a href="javascript:void(0);" class="mobilemenu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                  <ul>
+                      <li><a href="">Profile</a></li>
+                      <li class="active"><a href="">Key Campaigns</a></li>
+                      <li><a href="">My Requests</a></li>
+                  </ul>
+
+                  <div class="mwrap">
+                    <a href="javascript:void(0);" class="closenav">Close</a>
+                    <ul>
+                      <li><a href="">Profile</a></li>
+                      <li class="active"><a href="">Key Campaigns</a></li>
+                      <li><a href="">My Requests</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+              <div class="col-10 col-md-5 col-lg-3 col-xl-3 order-1 order-lg-2">
+                <div class="userbox">
+                  <div class="notification">
+                    <a href="javascript:void(0)" class=""><i class="fa fa-bell" aria-hidden="true"></i></a>
+                  </div>
+                  <div class="userinfo">
+                    <img src="images/user.jpg" alt="image">
+                  </div>
+                  <div class="username">
+                    <a href="javascript:void(0)" class="">StephOfAnime</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header><!-- /header -->
+
+        <section class="o-maincontent">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-12 c-camp">
+                <h2>Create Campaigns:</h2>
+                <div class="row">
+                  <div class="col-md-12 c-camp-inn">
+                    <div class="row">
+                      <!-- formbox -->
+                      <div class="col-md-12">
+                        <div class="c-formbox">
+                          <div class="c-formbox-text">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <input type="text" class="textbox" placeholder="Game Title">
+                                  </div>
+                                  <div class="col-md-12">
+                                    <textarea name="" class="textarea" placeholder="Game Description"></textarea>
+                                  </div>  
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <input type="text" class="textbox" placeholder="Developer">
+                                  </div>
+                                  <div class="col-md-12">
+                                    <input type="text" class="textbox" placeholder="Publisher">
+                                  </div>
+                                  <div class="col-md-12">
+                                    <input type="text" class="textbox" placeholder="Release Date">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- formbox -->
+                      <!-- tagbox -->
+                      <div class="col-md-12">
+                        <div class="c-tagbox">
+                          <h3>Add Tags:</h3>
+                          <div class="c-tagbox-inn">
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="action" class="styled-checkbox">
+                              <label for="action">Action</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="adventure" class="styled-checkbox">
+                              <label for="adventure">Adventure</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="battleroyale" class="styled-checkbox">
+                              <label for="battleroyale">Battle Royale</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="family" class="styled-checkbox">
+                              <label for="family">Family</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Fighting" class="styled-checkbox">
+                              <label for="Fighting">Fighting</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="FPS" class="styled-checkbox">
+                              <label for="FPS">FPS</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Indie" class="styled-checkbox">
+                              <label for="Indie">Indie</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="MMO" class="styled-checkbox">
+                              <label for="MMO">MMO</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="MOBA" class="styled-checkbox">
+                              <label for="MOBA">MOBA</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Platformer" class="styled-checkbox">
+                              <label for="Platformer">Platformer</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Puzzle" class="styled-checkbox">
+                              <label for="Puzzle">Puzzle</label>
+                            </div>
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Racing" class="styled-checkbox">
+                              <label for="Racing">Racing</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Retro" class="styled-checkbox">
+                              <label for="Retro">Retro</label>
+                            </div>
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Sci-Fi" class="styled-checkbox">
+                              <label for="Sci-Fi">Sci-Fi</label>
+                            </div>
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Simulator" class="styled-checkbox">
+                              <label for="Simulator">Simulator</label>
+                            </div>
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Sport" class="styled-checkbox">
+                              <label for="Sport">Sport</label>
+                            </div>
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Strategy" class="styled-checkbox">
+                              <label for="Strategy">Strategy</label>
+                            </div>
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Survival" class="styled-checkbox">
+                              <label for="Survival">Survival</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- tagbox -->
+
+                      <!-- tagbox -->
+                      <div class="col-md-12">
+                        <div class="c-tagbox">
+                          <h3>Add Platforms:</h3>
+                          <div class="c-tagbox-inn">
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Steam" class="styled-checkbox">
+                              <label for="Steam">Steam</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="EpicGamesStore" class="styled-checkbox">
+                              <label for="EpicGamesStore">Epic Games Store</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Playstation4" class="styled-checkbox">
+                              <label for="Playstation4">Playstation 4</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Playstation5" class="styled-checkbox">
+                              <label for="Playstation5">Playstation 5</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="PlayStationVR" class="styled-checkbox">
+                              <label for="PlayStationVR">PlayStation VR</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="NintendoSwitch" class="styled-checkbox">
+                              <label for="NintendoSwitch">Nintendo Switch</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="XboxOneXS" class="styled-checkbox">
+                              <label for="XboxOneXS">Xbox One X|S</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="XboxSeriesXS" class="styled-checkbox">
+                              <label for="XboxSeriesXS">XboxSeriesXS</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="HTCVive" class="styled-checkbox">
+                              <label for="HTCVive">HTC Vive</label>
+                            </div>
+
+                            <div class="c-tagbox-sec">
+                              <input type="checkbox" id="Oculus" class="styled-checkbox">
+                              <label for="Oculus">Oculus</label>
+                            </div>
+                             <div class="c-tagbox-sec">
+                              <input type="checkbox" id="iOS" class="styled-checkbox">
+                              <label for="iOS">iOS</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- tagbox -->
+
+                      <!-- formbox for image upload -->
+                      <div class="col-md-12">
+                        <div class="c-formbox">
+                          <div class="c-formbox-text">
+                            <div class="row">
+                              <div class="col-md-12 mb-3">
+                                <h3>Upload thumbnail images for the game:</h3>
+                                <!-- <input type="text" class="textbox" placeholder="Game Title"> -->
+                                <div class="file-input field">
+                                  <div class="uploadbox">
+                                    <div class="uploadbox-inn-image"></div>
+                                    <span class='btn btn-white'>Upload Image</span>
+                                  </div>
+                                  <input type="file" id="upload_thumbnail_images" name="upload_thumbnail_images" accept="" class="required">
+                                </div>
+                              </div>
+                              <div class="col-md-12 mb-3">
+                                <h3>Upload Videos:</h3>
+                                <div class="file-input field">
+                                  <div class="uploadbox">
+                                    <div class="uploadbox-inn-video"></div>
+                                    <span class='btn btn-white'>Upload Videos</span>
+                                  </div>
+                                  <input type="file" id="upload_thumbnail_videos" name="upload_thumbnail_videos" accept="" class="required">
+                                </div>
+                              </div>
+                              <div class="col-md-12 mb-3">
+                                <h3>Import Game Keys:</h3>
+                                <div class="file-input field">
+                                  <div class="uploadbox">
+                                    <div class="uploadbox-inn-csv"></div> 
+                                    <span class='btn btn-white'>Import (CSVs)</span>
+                                  </div>
+                                  <input type="file" id="upload_csv_files" name="upload_csv_files" accept="" class="required">
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                    <textarea name="" class="textarea" placeholder="Important information"></textarea>
+                              </div>  
+                              <div class="col-md-12 mb-3 text-center">
+                                <div class="btnbox">
+                                  <button type="submt" value="" class="btn btn-white">Preview Campaign</button>
+                                </div>
+                              </div>
+                              <div class="col-md-12 mb-3 text-center">
+                                <div class="btnbox">
+                                  <button type="button" class="btn btn-sky">Create Campaign for Public</button>
+                                  <button type="button" class="btn btn-sky">Create Campaign for Private</button>
+                                  <button type="button" class="btn btn-sky">Schedule Campaign</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- formbox -->
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            
+          </div>
+        </section>
+
+        <footer class="o-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center copyright">
+                <p>© Copyright 2021  |  Game Tomb  |  All Rights Reserved </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      
+    </div>
+
+    <!-- JS -->
+    <script src="js/modernizr.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

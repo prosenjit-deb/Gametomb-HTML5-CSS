@@ -1,0 +1,129 @@
+.btn, .btnSubmit {
+	font-size: 16px;
+	font-weight: $normal;
+	line-height: 24px;
+	padding:15px 30px;
+	border: none;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s; /* For Safari 3.0 to 6.0 */
+	transition: all 0.3s; /* For modern browsers */
+	position: relative;
+	color: $white;
+	min-width: 170px;
+
+	&:hover {
+		text-decoration: none;
+		transition: all 0.3s; /* For modern browsers */
+		-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s; /* For Safari 3.0 to 6.0 */
+	color: $white;
+	}
+	&:focus {
+		text-decoration: none;
+		outline: none;
+		border:none;
+	}
+
+	&-blue {
+		background-color: $blue;
+		border:1px solid $blue-one;
+		color: $white;
+
+		&:hover {
+			color: $white;
+			background-color: $blue-one;
+			border:1px solid $blue-one;
+		}
+	}
+
+	&-white {
+		background-color: $white;
+		border:1px solid $white;
+		color: $dark-gray-two;
+		font-size: 18px;
+		font-weight: 500;
+
+		&:hover {
+			color: $white;
+			background-color: $blue-one;
+			border:1px solid $blue-one;
+		}
+	}
+
+	&-sky {
+		background-color: $light-blue;
+		border:1px solid $light-blue;
+		color: $white;
+		font-size: 18px;
+		font-weight: 500;
+
+		&:hover {
+			color: $white;
+			background-color: $blue-one;
+			border:1px solid $blue-one;
+		}
+	}
+
+	&-green {
+		background-color: $green;
+		border:1px solid $green;
+		color: $white;
+		font-size: 18px;
+		font-weight: 500;
+
+		&:hover {
+			color: $white;
+			background-color: $blue-one;
+			border:1px solid $blue-one;
+		}
+	}
+
+	&-red {
+		background-color: $red;
+		border:1px solid $red;
+		color: $white;
+		font-size: 18px;
+		font-weight: 500;
+
+		&:hover {
+			color: $white;
+			background-color: $red-dark;
+			border:1px solid $red-dark;
+		}
+	}
+
+	&-violet {
+		background-color: $violet;
+		border:1px solid $violet;
+		color: $white;
+		font-size: 18px;
+		font-weight: 500;
+
+		&:hover {
+			color: $white;
+			background-color: rgba(121,50,168,0.79);
+			border:1px solid rgba(121,50,168,0.79);
+		}
+	}
+
+	&-violet-sm {
+		background-color: $violet-two;
+		border:1px solid $violet-two;
+		font-size: 13px;
+		line-height: 20px;
+		color: #b17fc9;
+		font-weight: 400;
+    	padding: 10px 20px;
+    	border-radius: 10px;
+
+		&:hover {
+			color: $white;
+			background-color: rgba(121,50,168,0.79);
+			border:1px solid rgba(121,50,168,0.79);
+		}
+	}
+
+}

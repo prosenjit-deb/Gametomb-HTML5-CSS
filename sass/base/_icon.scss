@@ -1,0 +1,63 @@
+.icon-close {
+    width: 12px;
+	height: 12px;
+	font-size: 0px;
+
+	&:before {
+	    position: absolute;
+	    left: 4px;
+	    top: 0;
+	    content: '';
+	    height: 12px;
+	    width: 2px;
+	    background-color: $dark-gray;
+	    transform: rotate(45deg);
+	    border-radius: 10px;
+	}
+	&:after {
+	    position: absolute;
+	    left: 4px;
+	    top: 0;
+	    content: '';
+	    height: 12px;
+	    width: 2px;
+	    background-color: $dark-gray;
+	    transform: rotate(-45deg);
+	    border-radius: 10px;
+	}
+}
+
+.icon-save {
+	background-image: url('../images/save.svg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.icon-pluscircle {
+	background-image: url('../images/plus-circle.svg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.icon-edit {
+	background-image: url('../images/edit.svg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.icon-download {
+	background-image: url('../images/download.svg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.icon-share {
+	background-image: url('../images/share.svg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}

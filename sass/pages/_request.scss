@@ -1,0 +1,204 @@
+.o-request {
+	padding:20px 0;
+	min-height: 65vh;
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+
+	&-top {
+		padding-top: 40px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid rgba(121,50,168,0.79);
+
+		h2 {
+		margin-bottom: 40px;
+		font-size: 30px;
+		line-height: 40px;
+		}
+
+		.custom-select {
+			font-size: 14px;
+			width: 230px;
+			float: right;
+			padding: 11px 20px;
+		}
+
+		.container {
+			max-width: 1540px;
+			width: 100%;
+		}
+	}
+
+	.container {
+		max-width: 1540px;
+		width: 100%;
+	}
+}
+
+.c-tablesec {
+	.table {
+		 border-collapse: separate; 
+		thead {
+			tr {
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				th {
+					border:0px;
+					text-align: center;
+					font-size: 18px;
+					font-weight: 500;
+					color:$white;
+					vertical-align: top;
+					padding:5px;
+					width: 100%;
+					word-break: break-word;
+
+					@include rwd(1500) {
+        				font-size: 22px;
+      				}
+
+					&:first-child {
+						text-align: left;
+					}
+				}
+			}
+		}
+
+		tbody {
+			tr {
+				margin:5px 0;
+				border-radius: 10px;
+				background-color: rgba(64,19,86,0.7803921568627451);
+				border: 1px solid #7800b3;
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				td {
+					border-top:0px;
+					border-bottom:0px;
+					border-left:0px;
+					border-right:1px solid #7800b3;
+					text-align: center;
+					font-size: 16px;
+					font-weight: 400;
+					color:$white;
+					vertical-align: middle;
+					padding:10px 5px;
+					width: 100%;
+					box-sizing: border-box;
+					line-height: 30px;
+
+					@include md {
+						line-height: 66px;
+					}
+					
+
+					&:first-child {
+						text-align: left;
+						padding-left: 10px;
+					}
+
+					&:last-child {
+						text-align: center;
+						border-right: 0px;
+					}
+
+					@include rwd(1500) {
+        				font-size: 20px;
+      				}
+
+      				.link {
+      					color:#ea00ff;
+
+      					&:hover {
+      						color:$white;
+      					}
+      				}
+				}
+			}
+		}
+
+		.btnbox {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-width: 220px;
+
+			@include rwd(1500) {
+				min-width: 320px;
+			}
+			.btn {
+				font-size: 12px;
+				padding:10px;
+				display: inline-block;
+				vertical-align: middle;
+				min-width: 90px;
+				border-radius: 5px;
+				line-height: 16px;
+				margin:0 5px;
+
+				@include rwd(1500) {
+        			min-width: 150px;
+        			font-size: 15px;
+      			}
+			}
+		}
+	}
+}
+
+.channelinfo {
+	display: flex;
+	justify-content:flex-start;
+	width: 210px;
+	align-items: center;
+
+	&-img {
+		width: 65px;
+		height: 65px;
+		text-align: center;
+		border-radius: 100%;
+		overflow: hidden;
+		margin-right: 10px;
+
+		img {
+			width: 65px;
+			height: 65px;
+			object-fit: cover;
+			justify-content: center;
+    		display: flex;
+		}
+	}
+
+	&-text {
+		display: flex;
+    	flex-direction: column;
+		p {
+			margin-bottom: 5px !important;
+			font-size: 14px;
+			@include rwd(1500) {
+        		font-size: 20px;
+      		}
+		}
+
+		span {
+			font-size: 10px;
+			line-height: 10px;
+			color:#9351bb;
+
+			@include rwd(1500) {
+        		font-size: 14px;
+      		}
+		}
+	}
+
+	p {
+		margin-bottom: 0px;
+	}
+}
